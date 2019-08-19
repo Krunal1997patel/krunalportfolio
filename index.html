@@ -26,7 +26,7 @@
       </div>
 
       <div class="container">
-          <form action="">
+          <form method="POST" data-netlify="true" data-netlify-recaptcha="true" name="content">
               <div class="form-group">
                   <div class="col-md-4 mb-3">
                     <label>Name</label>
@@ -40,6 +40,9 @@
                     <label>Messages</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required ></textarea>
                   </div>
+              </div>
+              <div>
+                    <div data-netlify-recaptcha="true"></div>
               </div>
               <button class="btn btn-primary" type="submit">Submit form</button>
           </form>
