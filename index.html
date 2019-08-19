@@ -25,32 +25,21 @@
         </div>
       </div>
 
-      <div class="container">
-          <form action="POST" data-netlify="true" name="content">
-              <div class="form-group">
-                  <div class="col-md-4 mb-3">
-                    <label>Name
-                        <input type="text" class="form-control" placeholder="Full Name"  required>
-                    </label>
-                  </div>
-                  <div class="col-md-4 mb-3">
-                    <label>Email
-                        <input type="text" class="form-control" placeholder="Email"  required>
-                    </label>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label>Messages
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required ></textarea>
-                    </label>    
-                  </div>
-              </div>
-              
-                <div data-netlify-recaptcha="true"></div>
-              
-              <button class="btn btn-primary" type="submit">Submit form</button>
-          </form>
-
-      </div>
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <p>
+                <label>Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Email: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <div data-netlify-recaptcha="true"></div>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+        </form>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
